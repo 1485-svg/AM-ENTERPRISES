@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0112)http://127.0.0.1:3000/c:/Users/SURAJ/Downloads/AM%20ENTERPRISES%20-%20CCTV%20&%20Electrical%20Works%20SARAS4.htm -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./AM ENTERPRISES - CCTV &amp; Electrical Works_files/___vscode_livepreview_injected_script"></script><script type="text/javascript" src="./AM ENTERPRISES - CCTV &amp; Electrical Works_files/___vscode_livepreview_injected_script(1)"></script>
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM ENTERPRISES - CCTV &amp; Electrical Works</title>
-    <script src="./AM ENTERPRISES - CCTV &amp; Electrical Works_files/saved_resource"></script>
-    <link href="./AM ENTERPRISES - CCTV &amp; Electrical Works_files/css2" rel="stylesheet">
+    <title>AM ENTERPRISES - CCTV & Electrical Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for the message box to replace alert/confirm */
         .message-box-overlay {
@@ -62,8 +62,55 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
+
+        /* Star rating CSS */
+        .stars {
+            display: inline-block;
+            font-size: 1.5rem; /* Adjust size as needed */
+            color: #ccc; /* Default grey for empty stars */
+            direction: rtl; /* For right-to-left display of stars */
+        }
+        .stars .star {
+            display: inline-block;
+            margin-right: 2px;
+        }
+        .stars input[type="radio"] {
+            display: none;
+        }
+        .stars label {
+            cursor: pointer;
+            padding: 0 2px;
+        }
+        .stars label:before {
+            content: '★';
+        }
+        .stars input[type="radio"]:checked ~ label:before {
+            color: #FFD700; /* Gold color for selected stars */
+        }
+        .stars label:hover ~ label:before,
+        .stars label:hover:before {
+            color: #FFD700; /* Gold color on hover */
+        }
+        .stars.display-only {
+            direction: ltr; /* For left-to-right display of stars in reviews list */
+        }
+        .stars.display-only .star {
+            cursor: default;
+        }
+        .stars.display-only label {
+            cursor: default;
+        }
+        /* Corrected rule for displaying filled stars */
+        .stars.display-only .star.filled {
+            color: #FFD700; /* Gold for filled stars in display */
+        }
+        .email-checkmark {
+            color: #10B981; /* Green-500 */
+            margin-left: 0.5rem;
+            font-size: 1rem;
+        }
     </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-auto{height:auto}.w-full{width:100%}.max-w-xl{max-width:36rem}.max-w-md{max-width:28rem}.list-inside{list-style-position:inside}.list-disc{list-style-type:disc}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-700{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-center{text-align:center}.font-\[Inter\]{font-family:Inter}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.hover\:text-blue-200:hover{--tw-text-opacity:1;color:rgb(191 219 254 / var(--tw-text-opacity, 1))}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+</head>
 <body class="font-[Inter] bg-gray-100 text-gray-800">
     <div id="message-box-container"></div>
 
@@ -71,17 +118,18 @@
         <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
             <div class="logo text-3xl font-bold mb-4 md:mb-0">AM ENTERPRISES</div>
             <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6">
-                <li><a href="http://127.0.0.1:3000/.vscode/SARAS2#home" class="hover:text-blue-200 transition duration-300 ease-in-out">Home</a></li>
-                <li><a href="http://127.0.0.1:3000/.vscode/SARAS2#services" class="hover:text-blue-200 transition duration-300 ease-in-out">Services</a></li>
-                <li><a href="http://127.0.0.1:3000/.vscode/SARAS2#products" class="hover:text-blue-200 transition duration-300 ease-in-out">Products</a></li>
-                <li><a href="http://127.0.0.1:3000/.vscode/SARAS2#gallery" class="hover:text-blue-200 transition duration-300 ease-in-out">Gallery</a></li>
-                <li><a href="http://127.0.0.1:3000/.vscode/SARAS2#contact" class="hover:text-blue-200 transition duration-300 ease-in-out">Contact Us</a></li>
+                <li><a href="#home" class="hover:text-blue-200 transition duration-300 ease-in-out">Home</a></li>
+                <li><a href="#services" class="hover:text-blue-200 transition duration-300 ease-in-out">Services</a></li>
+                <li><a href="#products" class="hover:text-blue-200 transition duration-300 ease-in-out">Products</a></li>
+                <li><a href="#gallery" class="hover:text-blue-200 transition duration-300 ease-in-out">Gallery</a></li>
+                <li><a href="#contact" class="hover:text-blue-200 transition duration-300 ease-in-out">Contact Us</a></li>
+                <li><a href="#customer-reviews" class="hover:text-blue-200 transition duration-300 ease-in-out">Reviews</a></li>
             </ul>
         </nav>
         <div class="hero bg-blue-700 text-white py-20 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Your Trusted Partner for Security &amp; Electrical Solutions</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Your Trusted Partner for Security & Electrical Solutions</h1>
             <p class="text-xl md:text-2xl mb-8">Providing top-notch CCTV Cameras and expert Electrical Repairs.</p>
-            <a href="http://127.0.0.1:3000/.vscode/SARAS2#contact" class="btn bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-100 transition duration-300 ease-in-out shadow-lg">Get a Quote</a>
+            <a href="#contact" class="btn bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-100 transition duration-300 ease-in-out shadow-lg">Get a Quote</a>
         </div>
     </header>
 
@@ -94,49 +142,64 @@
 
         <hr class="section-separator">
 
+        <section id="services" class="services bg-white p-8 rounded-xl shadow-md mb-8 textured-bg-blue">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">Our Services</h2>
+            <div class="service-grid grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="service-item bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <h3 class="text-2xl font-semibold text-blue-800 mb-3">Electrical Works &amp; Repairs</h3>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-3">CCTV Camera Installation & Sales</h3>
+                    <p class="text-base leading-relaxed mb-4">We offer a wide range of CCTV cameras, from basic home security systems to advanced commercial surveillance solutions. Our team handles professional installation, configuration, and maintenance.</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>IP Cameras</li>
+                        <li>Analog Cameras</li>
+                        <li>DVR/NVR Systems</li>
+                        <li>Wireless Security Systems</li>
+                    </ul>
+                </div>
+                <div class="service-item bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-3">Electrical Works & Repairs</h3>
                     <p class="text-base leading-relaxed mb-4">Our expert electricians are equipped to handle all kinds of electrical issues, from minor repairs to major installations. We ensure safe and compliant electrical solutions.</p>
                     <ul class="list-disc list-inside text-gray-700">
-                        <li>Wiring &amp; Rewiring</li>
+                        <li>Wiring & Rewiring</li>
                         <li>Panel Upgrades</li>
-                        <li>Fault Finding &amp; Repair</li>
+                        <li>Fault Finding & Repair</li>
                         <li>Lighting Solutions</li>
                         <li>Appliance Repair</li>
                     </ul>
                 </div>
-            
+            </div>
+        </section>
+
+        <hr class="section-separator">
+
         
 
         <hr class="section-separator">
-
-                    
-
-        <hr class="section-separator">
-
-       
 
         <hr class="section-separator">
 
         <section id="contact" class="contact bg-white p-8 rounded-xl shadow-md mb-8 textured-bg-gray">
             <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">Contact Us</h2>
             <p class="text-lg leading-relaxed mb-6 text-center">Have a question or need a service? Reach out to us!</p>
-            <form id="contactForm" class="max-w-xl mx-auto" abineguid="96B1532303B84AA692001CD611E93440">
+            <form id="contactForm" class="max-w-xl mx-auto">
                 <div class="form-group mb-4">
                     <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-                    <input type="text" id="name" name="name" required="" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                    <input type="text" id="name" name="name" required
+                           class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
                 </div>
                 <div class="form-group mb-4">
                     <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-                    <input type="email" id="email" name="email" required="" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
-                <div id="pwm-inline-icon-70737" class="pwm-field-icon" style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: -28px; margin-left: 554px;"><svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;" viewBox="0 0 40 64"><g><path d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z"></path><path d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z"></path></g></svg></div></div>
+                    <input type="email" id="email" name="email" required
+                           class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                </div>
                 <div class="form-group mb-4">
                     <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone (Optional):</label>
-                    <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                    <input type="tel" id="phone" name="phone"
+                           class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
                 </div>
                 <div class="form-group mb-4">
                     <label for="service" class="block text-gray-700 text-sm font-bold mb-2">Interested Service:</label>
-                    <select id="service" name="service" class="shadow border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                    <select id="service" name="service"
+                             class="shadow border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
                         <option value="">Select a Service</option>
                         <option value="cctv_sales">CCTV Camera Sales</option>
                         <option value="cctv_installation">CCTV Installation</option>
@@ -146,7 +209,8 @@
                 </div>
                 <div class="form-group mb-6">
                     <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message:</label>
-                    <textarea id="message" name="message" rows="5" required="" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"></textarea>
+                    <textarea id="message" name="message" rows="5" required
+                                  class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"></textarea>
                 </div>
                 <button type="submit" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold w-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Send Message</button>
                 <div id="contactFormMessage" class="mt-4 text-center text-sm font-semibold"></div>
@@ -159,33 +223,87 @@
             </div>
         </section>
 
-        <section id="admin-login" class="admin-login bg-white p-8 rounded-xl shadow-md mb-8 textured-bg-blue hidden">
+        <hr class="section-separator">
+
+        <!-- Customer Reviews Section -->
+        <section id="customer-reviews" class="customer-reviews bg-white p-8 rounded-xl shadow-md mb-8 textured-bg-blue">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">Customer Reviews</h2>
+
+            <!-- Review Submission Form -->
+            <div class="max-w-xl mx-auto mb-8 p-6 bg-blue-50 rounded-lg shadow-sm border border-blue-200">
+                <h3 class="text-2xl font-semibold text-blue-800 mb-4 text-center">Leave a Review</h3>
+                <form id="reviewForm">
+                    <div class="form-group mb-4">
+                        <label for="reviewerName" class="block text-gray-700 text-sm font-bold mb-2">Your Name:</label>
+                        <input type="text" id="reviewerName" name="reviewerName" required
+                               class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="reviewerEmail" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+                        <input type="email" id="reviewerEmail" name="reviewerEmail" required
+                               class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Rating:</label>
+                        <div class="stars" id="reviewStars">
+                            <!-- Stars are rendered in reverse order for RTL CSS trick -->
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-6">
+                        <label for="reviewMessage" class="block text-gray-700 text-sm font-bold mb-2">Your Review:</label>
+                        <textarea id="reviewMessage" name="reviewMessage" rows="4" required
+                                  class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold w-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Submit Review</button>
+                    <div id="reviewFormMessage" class="mt-4 text-center text-sm font-semibold"></div>
+                </form>
+            </div>
+
+            <!-- Display Existing Reviews -->
+            <div id="reviewsList" class="space-y-6 max-w-2xl mx-auto">
+                <p class="text-gray-500 text-center" id="noReviewsMessage">No reviews yet. Be the first to leave one!</p>
+                <!-- Reviews will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <hr class="section-separator">
+
+        <section id="admin-login" class="admin-login bg-white p-8 rounded-xl shadow-md mb-8 textured-bg-gray">
             <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">Admin Login</h2>
-            <form id="adminLoginForm" class="max-w-md mx-auto" abineguid="C93F2D3A39E44C3D8ED3D59F7A237279">
+            <form id="adminLoginForm" class="max-w-md mx-auto">
                 <div class="form-group mb-4">
                     <label for="adminUsername" class="block text-gray-700 text-sm font-bold mb-2">Username:</label>
-                    <input type="text" id="adminUsername" name="adminUsername" required="" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
-                <div id="pwm-inline-icon-94233" class="pwm-field-icon" style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: -28px; margin-left: 426px;"><svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;" viewBox="0 0 64 64"><g><path d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z"></path><path d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z"></path></g></svg><span id="pwm-inline-icon-badge-94233" style="position: absolute !important; inset: auto auto 0px 7px !important; box-sizing: content-box !important; font-family: monospace !important; font-size: 9px !important; border-radius: 2px !important; color: white !important; background: rgb(112, 185, 52) !important; border: 0.5px solid white !important; width: auto !important; height: 10px !important; min-width: 10px !important; min-height: 0px !important; display: flex !important; align-items: center !important; justify-content: center !important; pointer-events: none !important;">0</span></div></div>
+                    <input type="text" id="adminUsername" name="adminUsername" required
+                           class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                </div>
                 <div class="form-group mb-6">
                     <label for="adminPassword" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
-                    <input type="password" id="adminPassword" name="adminPassword" required="" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
-                <div id="pwm-inline-icon-93396" class="pwm-field-icon" style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: -28px; margin-left: 426px;"><svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;" viewBox="0 0 64 64"><g><path d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z"></path><path d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z"></path></g></svg><span id="pwm-inline-icon-badge-93396" style="position: absolute !important; inset: auto auto 0px 7px !important; box-sizing: content-box !important; font-family: monospace !important; font-size: 9px !important; border-radius: 2px !important; color: white !important; background: rgb(112, 185, 52) !important; border: 0.5px solid white !important; width: auto !important; height: 10px !important; min-width: 10px !important; min-height: 0px !important; display: flex !important; align-items: center !important; justify-content: center !important; pointer-events: none !important;">0</span></div></div>
+                    <input type="password" id="adminPassword" name="adminPassword" required
+                           class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500">
+                </div>
                 <button type="submit" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold w-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">Login</button>
                 <div id="adminLoginMessage" class="mt-4 text-center text-sm font-semibold"></div>
             </form>
         </section>
 
-        <section id="admin-dashboard" class="admin-dashboard bg-white p-8 rounded-xl shadow-md mb-8 textured-bg-gray flex flex-col">
+        <section id="admin-dashboard" class="admin-dashboard bg-white p-8 rounded-xl shadow-md mb-8 hidden textured-bg-gray">
             <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">Admin Dashboard</h2>
             <div class="flex justify-end mb-4">
                 <button id="adminLogoutBtn" class="btn bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition duration-300 ease-in-out shadow-md">Logout</button>
             </div>
-            <div id="inquiriesList" class="space-y-4"><p class="text-gray-500 text-center" id="noInquiriesMessage">No inquiries submitted yet.</p></div>
+            <div id="inquiriesList" class="space-y-4">
+                <p class="text-gray-500 text-center" id="noInquiriesMessage">No inquiries submitted yet.</p>
+            </div>
         </section>
     </main>
 
     <footer class="bg-gray-800 text-white py-6 text-center">
-        <p>© 2025 AM ENTERPRISES. All rights reserved.</p>
+        <p>&copy; 2025 AM ENTERPRISES. All rights reserved.</p>
     </footer>
 
     <script>
@@ -415,10 +533,153 @@ Timestamp: ${new Date(inquiry.timestamp).toLocaleString()}
             loadInquiriesIntoAdminPanel(); // Refresh the list
         }
 
-        // Initial check on page load
-        document.addEventListener('DOMContentLoaded', checkAdminStatus);
+        // --- Customer Review Logic ---
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewFormMessage = document.getElementById('reviewFormMessage');
+        const reviewsList = document.getElementById('reviewsList');
+        const noReviewsMessage = document.getElementById('noReviewsMessage');
+
+        /**
+         * Basic email validation function.
+         * @param {string} email - The email string to validate.
+         * @returns {boolean} True if the email is valid, false otherwise.
+         */
+        function isValidEmail(email) {
+            // A simple regex for email validation. More robust validation might be needed for production.
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        /**
+         * Renders star icons based on a given rating.
+         * @param {number} rating - The rating (1-5).
+         * @returns {string} HTML string of star icons.
+         */
+        function renderStars(rating) {
+            let starsHtml = '';
+            // Loop from 1 to 5 for LTR display of stars in reviews list
+            for (let i = 1; i <= 5; i++) {
+                starsHtml += `<span class="star ${i <= rating ? 'filled' : ''}">★</span>`;
+            }
+            return starsHtml;
+        }
+
+        /**
+         * Loads and displays customer reviews from local storage.
+         */
+        function loadReviews() {
+            const reviews = JSON.parse(localStorage.getItem('customerReviews')) || [];
+            reviewsList.innerHTML = ''; // Clear previous reviews
+
+            if (reviews.length === 0) {
+                noReviewsMessage.classList.remove('hidden');
+                reviewsList.appendChild(noReviewsMessage);
+            } else {
+                noReviewsMessage.classList.add('hidden');
+                // Sort reviews by newest first
+                reviews.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+                reviews.forEach(review => {
+                    const emailCheckmarkHtml = review.email && isValidEmail(review.email) ?
+                                               `<span class="email-checkmark">✔</span>` : '';
+                    const reviewDiv = document.createElement('div');
+                    reviewDiv.className = 'bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200';
+                    reviewDiv.innerHTML = `
+                        <div class="flex items-center mb-2">
+                            <p class="text-lg font-semibold text-gray-800 mr-3">${review.name}</p>
+                            ${review.email ? `<p class="text-sm text-gray-600 mr-1">(${review.email})</p>${emailCheckmarkHtml}` : ''}
+                            <div class="stars display-only ml-auto">${renderStars(review.rating)}</div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-3">${review.message}</p>
+                        <p class="text-xs text-gray-500">Reviewed on: ${new Date(review.timestamp).toLocaleString()}</p>
+                    `;
+                    reviewsList.appendChild(reviewDiv);
+                });
+            }
+        }
+
+        /**
+         * Handles review form submission.
+         */
+        reviewForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(reviewForm);
+            const reviewerName = formData.get('reviewerName');
+            const reviewerEmail = formData.get('reviewerEmail'); // Get the email
+            const reviewMessage = formData.get('reviewMessage');
+            const rating = parseInt(formData.get('rating'));
+
+            if (!reviewerName || !reviewerEmail || !reviewMessage || isNaN(rating) || rating < 1 || rating > 5) {
+                showMessageBox("Please fill in all fields and select a rating (1-5 stars).");
+                reviewFormMessage.classList.remove('text-green-500');
+                reviewFormMessage.classList.add('text-red-500');
+                reviewFormMessage.textContent = "Please fill in all fields and select a rating.";
+                return;
+            }
+
+            const newReview = {
+                id: crypto.randomUUID(),
+                name: reviewerName,
+                email: reviewerEmail, // Save the email
+                message: reviewMessage,
+                rating: rating,
+                timestamp: new Date().toISOString(),
+            };
+
+            try {
+                let reviews = JSON.parse(localStorage.getItem('customerReviews')) || [];
+                reviews.push(newReview);
+                localStorage.setItem('customerReviews', JSON.stringify(reviews));
+
+                // Prepare content for email sharing
+                const emailSubject = `Customer Review from ${newReview.name} (Rating: ${newReview.rating} stars)`;
+                const emailBody = `
+Reviewer Name: ${newReview.name}
+Reviewer Email: ${newReview.email}
+Rating: ${newReview.rating} out of 5 stars
+Review:
+${newReview.message}
+
+---
+Submitted on: ${new Date(newReview.timestamp).toLocaleString()}
+                `.trim();
+                const encodedEmailSubject = encodeURIComponent(emailSubject);
+                const encodedEmailBody = encodeURIComponent(emailBody);
+                const mailtoReviewLink = `mailto:?subject=${encodedEmailSubject}&body=${encodedEmailBody}`;
+
+
+                showMessageBox(
+                    `Thank you for your review! It has been saved.
+                    <br><br>
+                    <a href="${mailtoReviewLink}" target="_blank" class="text-blue-600 underline font-bold">Share Review via Email</a>
+                    `,
+                    () => {
+                        reviewForm.reset();
+                        // Reset star selection visually
+                        document.querySelectorAll('#reviewStars input[type="radio"]').forEach(radio => radio.checked = false);
+                        reviewFormMessage.textContent = "";
+                        loadReviews(); // Refresh the displayed reviews
+                    }
+                );
+                reviewFormMessage.classList.remove('text-red-500');
+                reviewFormMessage.classList.add('text-green-500');
+                reviewFormMessage.textContent = "Review submitted successfully!";
+
+            } catch (error) {
+                console.error("Error saving review:", error);
+                showMessageBox("Failed to submit review. Please try again later.");
+                reviewFormMessage.classList.remove('text-green-500');
+                reviewFormMessage.classList.add('text-red-500');
+                reviewFormMessage.textContent = "Failed to submit review.";
+            }
+        });
+
+        // Initial checks on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            checkAdminStatus();
+            loadReviews(); // Load reviews when the page loads
+        });
     </script>
-
-
-<div class="abineContentPanel" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent !important; margin: 0px !important; padding: 0px !important; display: none; opacity: 1 !important; z-index: 2147483647 !important; position: absolute !important; top: 20px !important; right: 20px !important; overflow: hidden !important; border-width: 0px !important; visibility: visible !important;"><iframe class="abineContentFrame" width="310px" allowtransparency="true" frameborder="0" height="0px" scrolling="no" src="./AM ENTERPRISES - CCTV &amp; Electrical Works_files/inlineForm.html" id="abine71295570doNotRemove" position="undefined" style="display:block !important;position:relative !important;background:transparent !important;border-width:0px !important;left:0px !important;top:0px !important;visibility:visible !important;opacity:1 !important;filter:alpha(opacity:100) !important;margin:0 !important;padding:0 !important;height:0px !important;width:310px"></iframe></div>
-</body></html>
+</body>
+</html>
